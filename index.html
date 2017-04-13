@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/addons/p5.dom.min.js"></script>
+	
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<style> body {padding: 0; margin: 0;} </style> 
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Hangman</h1>
+		<h3 id="display">Enter letters to guess. Correct guesses will be revealed. For every letter you get wrong, I shall kill you.</h3>
+		<button id="start">Start Game</button>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<h1>Data</h1>
+			<hr>
+			<div id="lives"></div>
+			<div id="score"></div>
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<h1>Previous Guesses</h1>
+			<hr>
+			<div id="guesses"></div>
+		</div>
+	</div>
+
+</div>
+
+<div class="container">
+<div class="panel panel-default">
+	<div id="sketch-holder"></div>
+</div>
+</div>
+
+<script language="javascript" type="text/javascript" src="./assets/javascript/Proc_hangman.js"></script>
+<script type="text/javascript" src="./assets/javascript/game.js"></script> 
+</body>
+</html>
